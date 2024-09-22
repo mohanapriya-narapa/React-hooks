@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import React  from 'react'
 import Welcome from './components/Welcome';
 import HookCounter from './components/HookCounter'
 import HookCounterTwo from './components/HookCounterTwo'
@@ -8,9 +9,11 @@ import HookCounterFour from './components/HookCounterFour'
 import HookUseEffect from './components/HookUseEffect'
 import HookMouse from './components/HookMouse'
 import IntervalHookCounter from './components/IntervalHookCounter'
-import DataFetching from './components/DataFetching';
-
+// import DataFetching from './components/DataFetching';
+import ContextA from './components/ContextB';
+export const UserContext=React.createContext();
 function App() {
+
   return (
     <div className="App">
       {/* <Welcome>
@@ -23,8 +26,11 @@ function App() {
       <HookUseEffect></HookUseEffect> */}
       {/* <HookMouse></HookMouse> */}
       {/* <IntervalHookCounter></IntervalHookCounter> */}
-      <DataFetching>
-      </DataFetching>
+      {/* <DataFetching>
+      </DataFetching> */}
+<UserContext.Provider value='mohana'>
+      <ContextA/>
+      </UserContext.Provider> 
     </div>
   );
 }
