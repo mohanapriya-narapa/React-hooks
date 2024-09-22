@@ -9,6 +9,7 @@ import HookCounterFour from './components/HookCounterFour'
 import HookUseEffect from './components/HookUseEffect'
 import HookMouse from './components/HookMouse'
 import IntervalHookCounter from './components/IntervalHookCounter'
+import UseReducerCounterObject from './components/UseReducerCounterObject'
 // import DataFetching from './components/DataFetching';
 import ContextA from './components/ContextB';
 export const UserContext=React.createContext();
@@ -28,9 +29,10 @@ function App() {
       {/* <IntervalHookCounter></IntervalHookCounter> */}
       {/* <DataFetching>
       </DataFetching> */}
-<UserContext.Provider value='mohana'>
+{/* <UserContext.Provider value='mohana'>
       <ContextA/>
-      </UserContext.Provider> 
+      </UserContext.Provider>  */}
+      <UseReducerCounterObject></UseReducerCounterObject>
     </div>
   );
 }
