@@ -14,6 +14,7 @@ import UseReducerCounterObject from './components/UseReducerCounterObject'
 import ContextA from './components/ContextB';
 import ComponentA from './components/ComponentA';
 import ComponentB from './components/ComponentB';
+import DataFetchingReducer from './components/DataFetchingReducer'
 export const UserContext = React.createContext();
 const intialState = {
   firstCounter: 0,
@@ -51,10 +52,11 @@ function App() {
       <ContextA/>
       </UserContext.Provider>  */}
       {/* <UseReducerCounterObject></UseReducerCounterObject> */}
-      <CountContext.Provider value ={{countState:count, countDispatch:dispatch}}> 
+      {/* <CountContext.Provider value ={{countState:count, countDispatch:dispatch}}> 
         <ComponentA></ComponentA>
         <ComponentB></ComponentB>
-      </CountContext.Provider>
+      </CountContext.Provider> */}
+      <DataFetchingReducer></DataFetchingReducer>
 
     </div>
   );
